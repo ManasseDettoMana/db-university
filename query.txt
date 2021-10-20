@@ -17,7 +17,7 @@
     AND date(`date`) = '2020-06-20';
 
 
-6.
+6.  SELECT * FROM `degrees` WHERE `level` = 'magistrale';
 
 
 7.  SELECT COUNT(*) FROM `departments`;
