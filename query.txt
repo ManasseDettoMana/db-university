@@ -7,7 +7,9 @@
 3.  SELECT * FROM `students` WHERE YEAR(`date_of_birth`) < '1991';
 
 
-4.  SELECT * FROM `courses` WHERE `period` = 'I semestre';
+4.  SELECT * FROM `courses` 
+    WHERE `period` = 'I semestre'
+    AND `year` = '1';
 
 
 5.
