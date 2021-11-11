@@ -20,9 +20,9 @@ degree_courses
 id                  NUMBER          SMALLINT        PRIMARY_KEY     AUTO_INCREMENT
 department_id       NUMBER          SMALLINT        FOREIGN_KEY     AUTO_INCREMENT
 name                STRING          VARCHAR(100)    NOTNULL
-academic_year       NUMBER          SMALLINT        NOTNULL                         //2021 -> academic year 2021/2022
+academic_year       NUMBER          SMALLINT        NOTNULL                       //2021 -> academic year 2021/2022
 description         STRING          TEXT            NULL
-kind                STRING          VARCHAR(100)    NOTNULL                         //TRIENNALE, MAGISTRALE (Or TINYINT? using options)
+kind                STRING          VARCHAR(100)    NOTNULL                       //TRIENNALE, MAGISTRALE
 language            STRING          VARCHAR(8)      NOTNULL
 contacts            STRING          VARCHAR(255)    NOTNULL
 
