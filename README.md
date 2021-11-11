@@ -15,7 +15,7 @@ address             STRING          VARCHAR(255)    NOTNULL
 telephone           STRING          VARCHAR(18)     NOTNULL
 
 ~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~
 degree_courses
 id                  NUMBER          SMALLINT        PRIMARY_KEY     AUTO_INCREMENT
 department_id       NUMBER          SMALLINT        FOREIGN_KEY     AUTO_INCREMENT
@@ -27,7 +27,7 @@ language            STRING          VARCHAR(8)      NOTNULL
 contacts            STRING          VARCHAR(255)    NOTNULL
 
 ~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~
 teachers
 id                  NUMBER          SMALLINT        PRIMARY_KEY     AUTO_INCREMENT
 first_name          STRING          VARCHAR(16)     NOTNULL
@@ -36,7 +36,7 @@ address             STRING          VARCHAR(100)    NOTNULL
 telephone           STRING          VARCHAR(18)     NOTNULL
 
 ~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~
 courses
 id                  NUMBER          SMALLINT        PRIMARY_KEY     AUTO_INCREMENT
 degree_course_id    NUMBER          SMALLINT        FOREIGN_KEY     AUTO_INCREMENT
@@ -47,7 +47,7 @@ time                NUMBER          SMALLINT        NULL
 year_course         NUMBER          TINYINT         NOTNULL
 
 ~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~
 students
 id                  NUMBER          SMALLINT        PRIMARY_KEY     AUTO_INCREMENT
 degree_course_id    NUMBER          SMALLINT        FOREIGN_KEY     AUTO_INCREMENT
@@ -57,7 +57,7 @@ address             STRING          VARCHAR(80)     NOTNULL
 telephone           STRING          VARCHAR(18)     NOTNULL
 
 ~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~
 exams
 id                  NUMBER          SMALLINT        PRIMARY_KEY     AUTO_INCREMENT
 course_id           NUMBER          SMALLINT        FOREIGN_KEY     AUTO_INCREMENT
@@ -65,7 +65,7 @@ date                DATE            DATE            NOTNULL
 description         STRING          VARCHAR(255)    NULL
 
 ~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~
 student_exam
 student_id          NUMBER          SMALLINT        PRIMARY_KEY, FOREIGN_KEY   AUTO_INCREMENT
 exam_id             NUMBER          SMALLINT        PRIMARY_KEY, FOREIGN_KEY     AUTO_INCREMENT
